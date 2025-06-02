@@ -24,6 +24,7 @@ import im.zego.media_projection_creator.RequestMediaProjectionPermissionManager;
 public class RequestMediaProjectionPermissionActivity extends Activity {
 
     private static final int RequestMediaProjectionPermissionCode = 1001;
+    public static final String ACTION_REQUEST_MEDIA_PROJECTION_RESULT = "im.zego.media_projection_creator.ACTION_REQUEST_MEDIA_PROJECTION_RESULT";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
