@@ -32,7 +32,8 @@ public class RequestMediaProjectionPermissionActivity extends Activity {
         filter.addAction("com.media_projection_creator.request_permission_result_succeeded");
         filter.addAction("com.media_projection_creator.request_permission_result_failed_user_canceled");
         filter.addAction("com.media_projection_creator.request_permission_result_failed_system_version_too_low");
-        registerReceiver(RequestMediaProjectionPermissionManager.getInstance(), filter);
+        // registerReceiver(RequestMediaProjectionPermissionManager.getInstance(), filter);
+        ContextCompat.registerReceiver(this, RequestMediaProjectionPermissionManager.getInstance(), filter, ContextCompat.RECEIVER_NOT_EXPORTED);
 
         if (Build.VERSION.SDK_INT < 21) {
             sendBroadcast(new Intent("com.media_projection_creator.request_permission_result_failed_system_version_too_low"));
