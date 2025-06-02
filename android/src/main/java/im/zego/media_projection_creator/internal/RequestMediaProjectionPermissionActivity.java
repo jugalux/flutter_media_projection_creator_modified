@@ -8,7 +8,7 @@ package im.zego.media_projection_creator.internal;
 //  Copyright © 2020 Zego. All rights reserved.
 //
 
-import android.app.Activity;
+import android.app.Activity; 
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.media.projection.MediaProjectionManager;
